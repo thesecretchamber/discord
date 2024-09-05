@@ -162,25 +162,6 @@ html.theme-light #app-mount .theme-light .root_f9a4c9 {
   --text-tertiary: hsl(0 0% 0% / 55%);
 }
 
-@font-face {
-  font-family: "Ubuntu";
-}
-@font-face {
-  font-family: "Ubuntu";
-  font-weight: 200;
-}
-@font-face {
-  font-family: "Ubuntu";
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Ubuntu";
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Ubuntu";
-  font-weight: 700;
-}
 html,
 span:not([class*=spinner_], [class*=spinnerItem]) {
   backface-visibility: hidden;
