@@ -29,18 +29,17 @@
             background-color: rgba(40, 42, 54, 0.8);
             border: 1px solid rgba(70, 72, 84, 0.5);
             border-radius: 0.5rem;
-            padding: 1rem 1.5rem;
+            padding: 1rem 1.5rem; /* xl:p-6 */
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1rem; /* xl:gap-6 */
             transition: background-color 0.3s ease;
             height: 100%;
         }
         .feature-card:hover { background-color: rgba(50, 52, 64, 0.9); }
         .feature-card .icon {
-            font-size: 1.5rem; /* lg:text-2xl */
+            /* Sizes adjusted via class */
             color: #50fa7b;
-            width: 2rem; /* lg:w-10 */
             text-align: center;
             flex-shrink: 0;
         }
@@ -48,14 +47,14 @@
         .feature-card h3 {
             font-weight: 600;
             color: #f8f8f2;
-            margin-bottom: 0.1rem;
+            margin-bottom: 0.1rem; /* xl:mb-1 */
         }
         .feature-card p {
             color: #bd93f9;
             line-height: 1.4;
         }
         .feature-card .star-icon {
-            font-size: 1rem; /* lg:text-lg */
+            /* Sizes adjusted via class */
             color: #f1fa8c;
             margin-left: auto;
             flex-shrink: 0;
@@ -65,21 +64,20 @@
         .hexagon-placeholder {
             background-color: rgba(40, 42, 54, 0.8);
             border-radius: 10%;
-            width: 100px; /* lg:w-32 */
-            height: 100px; /* lg:h-32 */
+            /* Sizes adjusted via class */
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1rem auto;
+            margin: 0 auto 1rem auto; /* xl:mb-6 */
         }
-        .hexagon-placeholder i { font-size: 3rem; color: #bd93f9; } /* lg:text-5xl */
+        .hexagon-placeholder i { color: #bd93f9; } /* Sizes adjusted via class */
         .hexagon-placeholder img { max-width: 70%; max-height: 70%; object-fit: contain; }
 
         /* Header Nav Link Styling */
         .nav-link {
             color: #e0e0e0;
-            transition: color 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
-            padding: 0.5rem 0.75rem;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 0.5rem 0.75rem; /* xl:px-4 */
             border-radius: 0.375rem;
         }
         .nav-link:hover {
@@ -90,7 +88,7 @@
             background-color: #bd93f9;
             color: #1a1a2e;
             font-weight: 600;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1rem; /* xl:py-2 xl:px-5 */
             border-radius: 0.375rem;
             transition: background-color 0.3s ease;
         }
@@ -100,12 +98,12 @@
         .section-heading {
             font-weight: 700;
             color: #f8f8f2;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.5rem; /* xl:mb-8 */
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.75rem; /* lg:gap-4 */
+            gap: 0.75rem; /* lg:gap-4 xl:gap-5 */
         }
         .section-heading i {
              color: #50fa7b;
@@ -114,15 +112,15 @@
         /* Styling for content sections (#about, #contact) */
         .content-section {
              padding-top: 1rem;
-             margin-bottom: 3rem; /* lg:mb-16 */
+             margin-bottom: 3rem; /* lg:mb-16 xl:mb-20 */
              background-color: rgba(40, 42, 54, 0.8);
              border: 1px solid rgba(70, 72, 84, 0.5);
-             padding: 2rem; /* lg:p-10 */
-             border-radius: 0.5rem; /* lg:rounded-lg */
+             padding: 2rem; /* lg:p-10 xl:p-12 */
+             border-radius: 0.5rem; /* lg:rounded-lg xl:rounded-xl */
         }
         .content-section p {
             text-align: left;
-            line-height: 1.7;
+            line-height: 1.7; /* xl:leading-relaxed */
             color: #ccc;
         }
         /* Specific styling for contact list */
@@ -131,44 +129,44 @@
             padding-left: 0;
         }
         .contact-list li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.5rem; /* xl:mb-3 */
             color: #ccc;
         }
         /* Styling for links within contact list */
         .contact-list a {
-            color: #ccc; /* Match list item color */
-            text-decoration: none; /* Remove underline */
+            color: #ccc;
+            text-decoration: none;
             transition: color 0.3s ease;
-            display: inline-flex; /* Align icon and text */
+            display: inline-flex;
             align-items: center;
         }
         .contact-list a:hover {
-            color: #f8f8f2; /* Brighter on hover */
+            color: #f8f8f2;
         }
         .contact-list i {
-            margin-right: 0.5rem;
-            color: #bd93f9; /* Purple icon */
-            width: 1.25rem; /* Fixed width for alignment */
+            margin-right: 0.5rem; /* xl:mr-3 */
+            color: #bd93f9;
+            width: 1.25rem; /* xl:w-6 */
             text-align: center;
-            transition: color 0.3s ease; /* Add transition to icon color */
+            transition: color 0.3s ease;
         }
          .contact-list a:hover i {
-             color: #50fa7b; /* Change icon color on link hover */
+             color: #50fa7b;
          }
         /* Contact subsection heading */
         .contact-subsection h3 {
             font-weight: 600;
             color: #f8f8f2;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
+            margin-top: 1.5rem; /* xl:mt-8 */
+            margin-bottom: 0.75rem; /* xl:mb-4 */
             border-bottom: 1px solid rgba(70, 72, 84, 0.5);
-            padding-bottom: 0.5rem;
-            display: inline-flex; /* Align icon and text */
+            padding-bottom: 0.5rem; /* xl:pb-3 */
+            display: inline-flex;
             align-items: center;
-            gap: 0.5rem; /* Space between icon and text */
-            width: 100%; /* Make heading take full width for border */
+            gap: 0.5rem; /* xl:gap-3 */
+            width: 100%;
         }
-        .contact-subsection h3 i { /* Icon color in subsection heading */
+        .contact-subsection h3 i {
              color: #50fa7b;
         }
 
@@ -177,16 +175,12 @@
 <body class="flex flex-col min-h-screen">
 
     <header class="py-4 px-6 sticky top-0 z-50 bg-opacity-80 backdrop-blur-md" style="background-color: #1a1a2e;">
-        <div class="container mx-auto flex justify-between items-center lg:max-w-6xl">
-            <div>
-                <a href="#" class="flex items-center gap-2 text-xl lg:text-2xl font-bold text-white">
-                    <i class="fab fa-discord text-3xl lg:text-4xl text-gray-400"></i>
-                    <span class="hidden sm:inline">Chamber of Secrets | 18+ SFW Chat</span>
+        <div class="container mx-auto flex justify-between items-center lg:max-w-7xl xl:max-w-screen-xl"> <div>
+                <a href="#" class="flex items-center gap-2 text-xl lg:text-2xl xl:text-3xl font-bold text-white"> <i class="fab fa-discord text-3xl lg:text-4xl xl:text-5xl text-gray-400"></i> <span class="hidden sm:inline">Chamber of Secrets | 18+ SFW Chat</span>
                 </a>
             </div>
             <nav>
-                <ul class="flex items-center space-x-2 sm:space-x-4 text-sm lg:text-base">
-                    <li><a href="#" class="nav-link hidden md:inline">Main</a></li>
+                <ul class="flex items-center space-x-2 sm:space-x-4 text-sm lg:text-base xl:text-lg"> <li><a href="#" class="nav-link hidden md:inline">Main</a></li>
                     <li><a href="#about" class="nav-link hidden md:inline">About Us</a></li>
                     <li><a href="#contact" class="nav-link hidden md:inline">Contact</a></li>
                     <li>
@@ -199,133 +193,104 @@
         </div>
     </header>
 
-    <main class="container mx-auto max-w-4xl lg:max-w-5xl px-4 py-8 flex-grow">
+    <main class="container mx-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl px-4 py-8 flex-grow"> <section class="text-center mb-10 pt-16 lg:pt-20 xl:pt-24"> <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-2">Chamber of Secrets: 18+ SFW Adult Discord Server</h1> <p class="text-lg lg:text-xl xl:text-2xl text-gray-300 mb-1">A Chill Community for Free Adult Chat (18+ SFW). UK & Global Members Welcome!</p> <p class="text-sm lg:text-base xl:text-lg text-gray-400">Join our friendly adult Discord server. Strictly 18+ and Safe for Work.</p> </section>
 
-        <section class="text-center mb-10 pt-16">
-             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">Chamber of Secrets: 18+ SFW Adult Discord Server</h1>
-            <p class="text-lg lg:text-xl text-gray-300 mb-1">A Chill Community for Free Adult Chat (18+ SFW). UK & Global Members Welcome!</p>
-            <p class="text-sm lg:text-base text-gray-400">Join our friendly adult Discord server. Strictly 18+ and Safe for Work.</p>
-        </section>
+        <section class="text-center mb-12 lg:mb-16 xl:mb-20"> <div class="hexagon-placeholder w-[100px] h-[100px] lg:w-32 lg:h-32 xl:w-36 xl:h-36"> <i class="fab fa-discord text-3xl lg:text-5xl xl:text-6xl"></i> </div>
+            <p class="text-gray-400 text-sm lg:text-base xl:text-lg mb-1">The fastest growing chatroom for adults...Join us now</p> <p class="text-gray-500 text-xs lg:text-sm xl:text-base">&copy; Chamber of Secrets</p> </section>
 
-        <section class="text-center mb-12 lg:mb-16">
-            <div class="hexagon-placeholder">
-                <i class="fab fa-discord"></i>
-                </div>
-            <p class="text-gray-400 text-sm lg:text-base mb-1">The fastest growing chatroom for adults...Join us now</p>
-            <p class="text-gray-500 text-xs lg:text-sm">&copy; Chamber of Secrets</p>
-        </section>
-
-        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-16">
-            <div class="feature-card">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <div class="text-content">
-                    <h3 class="text-base lg:text-lg">Chill 18+ Hangout</h3>
-                    <p class="text-sm lg:text-base">Join our friendly & welcoming SFW adult chat community.</p>
-                </div>
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 xl:gap-8 mb-16 xl:mb-20"> <div class="feature-card">
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-users"></i></div> <div class="text-content">
+                    <h3 class="text-base lg:text-lg xl:text-xl">Chill 18+ Hangout</h3> <p class="text-sm lg:text-base xl:text-lg">Join our friendly & welcoming SFW adult chat community.</p> </div>
             </div>
             <div class="feature-card">
-                <div class="icon"><i class="fas fa-gamepad"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-gamepad"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Games & VCs</h3>
-                    <p class="text-sm lg:text-base">Connect 4, Uno & more in our active adult Discord server.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Games & VCs</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Connect 4, Uno & more in our active adult Discord server.</p>
                  </div>
-                 <div class="star-icon"><i class="fas fa-star"></i></div>
-            </div>
+                 <div class="star-icon text-base lg:text-lg xl:text-xl"><i class="fas fa-star"></i></div> </div>
              <div class="feature-card">
-                <div class="icon"><i class="fas fa-robot"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-robot"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Fun Bots</h3>
-                    <p class="text-sm lg:text-base">Weather, horoscopes, and amusement bots for free chat fun.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Fun Bots</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Weather, horoscopes, and amusement bots for free chat fun.</p>
                  </div>
             </div>
             <div class="feature-card">
-                <div class="icon"><i class="fas fa-camera-retro"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-camera-retro"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Showcase Yourself</h3>
-                    <p class="text-sm lg:text-base">Share selfies & talents in our chatters-got-talent channel.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Showcase Yourself</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Share selfies & talents in our chatters-got-talent channel.</p>
                 </div>
             </div>
              <div class="feature-card">
-                <div class="icon"><i class="fas fa-paw"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-paw"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Pet Chat</h3>
-                    <p class="text-sm lg:text-base">Show off your adorable furry friends in our community.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Pet Chat</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Show off your adorable furry friends in our community.</p>
                 </div>
-                 <div class="star-icon"><i class="fas fa-star"></i></div>
+                 <div class="star-icon text-base lg:text-lg xl:text-xl"><i class="fas fa-star"></i></div>
             </div>
              <div class="feature-card">
-                <div class="icon"><i class="fas fa-music"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-music"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Music Bots</h3>
-                    <p class="text-sm lg:text-base">Listen to your favorite tunes over voice chat with others.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Music Bots</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Listen to your favorite tunes over voice chat with others.</p>
                 </div>
             </div>
              <div class="feature-card">
-                <div class="icon"><i class="fas fa-utensils"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-utensils"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Food & Fashion</h3>
-                    <p class="text-sm lg:text-base">Exchange cooking tips and discuss trends in our UK chat rooms.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Food & Fashion</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Exchange cooking tips and discuss trends in our UK chat rooms.</p>
                  </div>
-                 <div class="star-icon"><i class="fas fa-star"></i></div>
+                 <div class="star-icon text-base lg:text-lg xl:text-xl"><i class="fas fa-star"></i></div>
             </div>
              <div class="feature-card">
-                <div class="icon"><i class="fas fa-dumbbell"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-dumbbell"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Workout Challenges</h3>
-                    <p class="text-sm lg:text-base">Stay fit with us and participate in server challenges.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Workout Challenges</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Stay fit with us and participate in server challenges.</p>
                 </div>
             </div>
              <div class="feature-card">
-                <div class="icon"><i class="fas fa-image"></i></div>
+                <div class="icon w-8 h-8 text-xl lg:text-2xl xl:text-3xl"><i class="fas fa-image"></i></div>
                 <div class="text-content">
-                     <h3 class="text-base lg:text-lg">Photography Room</h3>
-                    <p class="text-sm lg:text-base">Share breathtaking pictures from around the globe.</p>
+                     <h3 class="text-base lg:text-lg xl:text-xl">Photography Room</h3>
+                    <p class="text-sm lg:text-base xl:text-lg">Share breathtaking pictures from around the globe.</p>
                 </div>
-                 <div class="star-icon"><i class="fas fa-star"></i></div>
+                 <div class="star-icon text-base lg:text-lg xl:text-xl"><i class="fas fa-star"></i></div>
             </div>
         </section>
 
         <section id="about" class="content-section">
-             <h2 class="section-heading text-2xl lg:text-3xl">
-                <i class="fas fa-info-circle text-xl lg:text-2xl"></i>
-                <span>About Our 18+ SFW Adult Chat Server</span>
+             <h2 class="section-heading text-2xl lg:text-4xl xl:text-5xl"> <i class="fas fa-info-circle text-xl lg:text-3xl xl:text-4xl"></i> <span>About Our 18+ SFW Adult Chat Server</span>
             </h2>
-             <p class="mb-4 text-base lg:text-lg">
-                Welcome to Chamber of Secrets! We created this free adult chat community (strictly 18+ and SFW) as a welcoming, chill online space. Our goal is to connect adults for genuine friendships in a positive environment. We're a popular choice for UK chat users and global members alike looking for a relaxed social server.
+             <p class="mb-4 text-base lg:text-xl xl:text-2xl"> Welcome to Chamber of Secrets! We created this free adult chat community (strictly 18+ and SFW) as a welcoming, chill online space. Our goal is to connect adults for genuine friendships in a positive environment. We're a popular choice for UK chat users and global members alike looking for a relaxed social server.
             </p>
-             <p class="text-base lg:text-lg">
-                Our adult Discord server hosts a diverse group, mostly mid-twenties+, sharing interests like gaming, music, pets, and good conversation. We're more than just another Discord server; we're a true online hangout for adults seeking a free chat space.
+             <p class="text-base lg:text-xl xl:text-2xl"> Our adult Discord server hosts a diverse group, mostly mid-twenties+, sharing interests like gaming, music, pets, and good conversation. We're more than just another Discord server; we're a true online hangout for adults seeking a free chat space.
             </p>
         </section>
 
         <section id="contact" class="content-section">
-             <h2 class="section-heading text-2xl lg:text-3xl">
-                <i class="fas fa-envelope text-xl lg:text-2xl"></i>
-                <span>Contact Us</span>
+             <h2 class="section-heading text-2xl lg:text-4xl xl:text-5xl"> <i class="fas fa-envelope text-xl lg:text-3xl xl:text-4xl"></i> <span>Contact Us</span>
             </h2>
-             <p class="mb-4 text-center text-base lg:text-lg">
-                Need help in our adult Discord server? Reach out to an Admin or Mod via Discord, or find us on social media.
+             <p class="mb-4 text-center text-base lg:text-xl xl:text-2xl"> Need help in our adult Discord server? Reach out to an Admin or Mod via Discord, or find us on social media.
             </p>
 
             <div class="contact-subsection">
-                 <h3 class="text-lg lg:text-xl"><i class="fas fa-user-shield"></i> Admins</h3>
-                <ul class="contact-list text-base lg:text-lg">
-                    <li><i class="fab fa-discord"></i> khandikiss</li>
+                 <h3 class="text-lg lg:text-2xl xl:text-3xl"><i class="fas fa-user-shield lg:text-xl xl:text-2xl"></i> Admins</h3> <ul class="contact-list text-base lg:text-xl xl:text-2xl"> <li><i class="fab fa-discord"></i> khandikiss</li>
                     <li><i class="fab fa-discord"></i> thegreatone.py</li>
                 </ul>
             </div>
 
             <div class="contact-subsection">
-                 <h3 class="text-lg lg:text-xl"><i class="fas fa-user-cog"></i> Mods</h3>
-                 <ul class="contact-list text-base lg:text-lg">
-                    <li>N/A</li>
+                 <h3 class="text-lg lg:text-2xl xl:text-3xl"><i class="fas fa-user-cog lg:text-xl xl:text-2xl"></i> Mods</h3> <ul class="contact-list text-base lg:text-xl xl:text-2xl"> <li>N/A</li>
                  </ul>
             </div>
 
             <div class="contact-subsection">
-                 <h3 class="text-lg lg:text-xl"><i class="fas fa-share-alt"></i> Social Media</h3>
-                 <ul class="contact-list text-base lg:text-lg">
-                    <li>
+                 <h3 class="text-lg lg:text-2xl xl:text-3xl"><i class="fas fa-share-alt lg:text-xl xl:text-2xl"></i> Social Media</h3> <ul class="contact-list text-base lg:text-xl xl:text-2xl"> <li>
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-twitter"></i> Twitter
                         </a>
@@ -345,16 +310,11 @@
             </div>
         </section>
 
-        <section class="text-center max-w-2xl lg:max-w-3xl mx-auto mb-12 lg:mb-16">
-             <h3 class="text-lg lg:text-xl font-semibold text-gray-300 mb-2">Join Our Chill Adult Chat Community</h3>
-             <p class="text-sm lg:text-base text-gray-400 leading-relaxed">
-                 Whether you're into music, games, or seeking a chill adult chat space, Chamber Of Secrets has something for everyone. We're a great fit for those seeking an 18+ SFW adult Discord server, popular with UK chat users and beyond. Join our unique and welcoming free chat community today!
+        <section class="text-center max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mb-12 lg:mb-16 xl:mb-20"> <h3 class="text-lg lg:text-2xl xl:text-3xl font-semibold text-gray-300 mb-2">Join Our Chill Adult Chat Community</h3> <p class="text-sm lg:text-lg xl:text-xl text-gray-400 leading-relaxed"> Whether you're into music, games, or seeking a chill adult chat space, Chamber Of Secrets has something for everyone. We're a great fit for those seeking an 18+ SFW adult Discord server, popular with UK chat users and beyond. Join our unique and welcoming free chat community today!
              </p>
         </section>
 
-        <div class="text-center mb-6">
-             <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 lg:py-4 lg:px-10 rounded-lg text-lg lg:text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
-                Join Our Adult Discord Server
+        <div class="text-center mb-6 xl:mb-10"> <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 lg:py-4 lg:px-10 xl:py-5 xl:px-12 rounded-lg text-lg lg:text-xl xl:text-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"> Join Our Adult Discord Server
             </a>
         </div>
 
